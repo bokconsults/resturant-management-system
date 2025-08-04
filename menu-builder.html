@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Builder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <nav class="bg-orange-600 p-4 text-white">
+    <div class="container mx-auto">
+      <a class="text-xl font-bold" href="dashboard.html">Restaurant Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="max-w-2xl mx-auto mt-8 bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-6">Menu Builder</h2>
+    <form>
+      <div class="mb-4">
+        <label for="dishName" class="block font-medium mb-1">Dish Name</label>
+        <input type="text" id="dishName" class="w-full border rounded px-3 py-2" placeholder="e.g. Jollof Rice" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="ingredients" class="block font-medium mb-1">Select Ingredients</label>
+        <select multiple id="ingredients" class="w-full border rounded px-3 py-2 h-40">
+          <option>Rice</option>
+          <option>Tomatoes</option>
+          <option>Onions</option>
+          <option>Chicken</option>
+          <option>Spices</option>
+          <option>Vegetable Oil</option>
+        </select>
+        <p class="text-sm text-gray-500 mt-1">Hold Ctrl (Windows) or Cmd (Mac) to select multiple.</p>
+      </div>
+
+      <div class="mb-4">
+        <label for="price" class="block font-medium mb-1">Dish Price (₦)</label>
+        <input type="number" id="price" class="w-full border rounded px-3 py-2" placeholder="e.g. 1500" />
+      </div>
+
+      <div class="mb-4">
+        <label for="prepTime" class="block font-medium mb-1">Preparation Time (Minutes)</label>
+        <input type="number" id="prepTime" class="w-full border rounded px-3 py-2" placeholder="e.g. 45" />
+      </div>
+
+      <button type="submit" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded">Save Dish</button>
+    </form>
+  </div>
+
+</body>
+</html>

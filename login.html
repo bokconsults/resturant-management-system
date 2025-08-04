@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant System Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="w-full max-w-sm bg-white p-8 rounded-xl shadow-md">
+    <h2 class="text-2xl font-bold text-center text-orange-600 mb-6">Restaurant Management</h2>
+    <form>
+      <label class="block mb-2 font-semibold">Email</label>
+      <input type="email" class="w-full p-2 border rounded mb-4" placeholder="Enter your email" />
+
+      <label class="block mb-2 font-semibold">Password</label>
+      <input type="password" class="w-full p-2 border rounded mb-6" placeholder="Enter your password" />
+
+      <button type="submit" onclick="window.location.href='dashboard.html'; return false"
+        class="w-full bg-orange-500 text-white p-2 rounded hover:bg-orange-600">
+        Login
+      </button>
+    </form>
+  </div>
+</body>
+</html>

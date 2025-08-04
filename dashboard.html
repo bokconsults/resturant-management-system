@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex bg-gray-100 min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-md p-5">
+    <h1 class="text-xl font-bold text-orange-600 mb-6">Dashboard</h1>
+    <nav class="space-y-4">
+      <a href="inventory.html" class="block text-gray-700 hover:text-orange-500">Inventory</a>
+      <a href="menu-builder.html" class="block text-gray-700 hover:text-orange-500">Menu Builder</a>
+      <a href="order-tracking.html" class="block text-gray-700 hover:text-orange-500">Order Tracking</a>
+      <a href="suppliers.html" class="block text-gray-700 hover:text-orange-500">Suppliers</a>
+      <a href="reports.html" class="block text-gray-700 hover:text-orange-500">Reports</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-10">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">Welcome to the Restaurant Management System</h2>
+    <p class="text-gray-600 mb-4">Use the menu on the left to navigate through system modules.</p>
+
+    <div class="grid grid-cols-2 gap-6 mt-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2 text-orange-600">Inventory</h3>
+        <p class="text-gray-600">Check current stock levels and status of ingredients.</p>
+        <a href="inventory.html" class="text-sm text-orange-500 hover:underline mt-2 inline-block">Go to Inventory</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2 text-orange-600">Menu Builder</h3>
+        <p class="text-gray-600">Create and manage dishes based on your stock.</p>
+        <a href="menu-builder.html" class="text-sm text-orange-500 hover:underline mt-2 inline-block">Go to Menu Builder</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2 text-orange-600">Order Tracking</h3>
+        <p class="text-gray-600">View and update order statuses from customers.</p>
+        <a href="order-tracking.html" class="text-sm text-orange-500 hover:underline mt-2 inline-block">Go to Orders</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2 text-orange-600">Suppliers</h3>
+        <p class="text-gray-600">Manage vendor details and supply requests.</p>
+ 	<a href="suppliers.html" class="text-sm text-orange-500 hover:underline mt-2 inline-block">Check Supply Requests</a>
+      </div>

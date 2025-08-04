@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supplier Management</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="dashboard.html">Restaurant Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="mb-4">Add Supplier</h2>
+
+    <form class="bg-white p-4 shadow rounded">
+      <div class="mb-3">
+        <label for="supplierName" class="form-label">Supplier Name</label>
+        <input type="text" class="form-control" id="supplierName" placeholder="e.g. Akin Agro Ventures" />
+      </div>
+      <div class="mb-3">
+        <label for="supplyCategory" class="form-label">Supply Category</label>
+        <select class="form-select" id="supplyCategory">
+          <option>Vegetables</option>
+          <option>Meat & Poultry</option>
+          <option>Grains</option>
+          <option>Seafood</option>
+          <option>Dairy</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="supplierItems" class="form-label">Items Supplied</label>
+        <input type="text" class="form-control" id="supplierItems" placeholder="e.g. Tomatoes, Onions" />
+      </div>
+      <div class="mb-3">
+        <label for="supplierContact" class="form-label">Contact Information</label>
+        <input type="text" class="form-control" id="supplierContact" placeholder="Phone or Email" />
+      </div>
+      <button type="submit" class="btn btn-primary">Add Supplier</button>
+    </form>
+
+    <hr class="my-5"/>
+
+    <h3>Existing Suppliers</h3>
+    <table class="table table-bordered table-hover bg-white mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Items Supplied</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Akin Agro Ventures</td>
+          <td>Vegetables</td>
+          <td>Tomatoes, Peppers, Onions</td>
+          <td>08031234567</td>
+        </tr>
+        <tr>
+          <td>Deji Meats Ltd</td>
+          <td>Meat & Poultry</td>
+          <td>Beef, Chicken, Turkey</td>
+          <td>dejimeats@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Blue Sea Foods</td>
+          <td>Seafood</td>
+          <td>Crabs, Fish, Prawns</td>
+          <td>08123456789</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
